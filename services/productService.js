@@ -21,7 +21,7 @@ await sharp(req.files.imageCover[0].buffer)
 .resize(2000,1333)
 .toFormat('jpeg')
 .jpeg({quality:95})
-.toFile(`./uploads/products/${imageCoverFileName}`);
+.toFile(`uploads/products/${imageCoverFileName}`);
 
 // save image after processing to the DB : 
 req.body.imageCover=imageCoverFileName;
