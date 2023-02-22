@@ -42,8 +42,9 @@ await sharp(img.buffer)
 // save image after processing to the DB : 
 req.body.images.push(imageName);
 }));
-next();
+
 }
+  next();
 });
 
 // @disc get list of Products
